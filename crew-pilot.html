@@ -1,28 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="main crew">
+      <div class="navbar">
+        <img class="navlogo" src="./assets/shared/logo.svg" alt="logo" />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+        <div class="navbtn">
+          <a class="home-btn navtext" href="index.html"
+            ><strong>00</strong> Home</a
+          >
+          <a class="dest-btn navtext" href="./destination-moon.html"
+            ><strong>01</strong> Destination</a
+          >
+          <a class="crew-btn navtext current" href="crew-commander.html"
+            ><strong>02</strong> Crew</a
+          >
+          <a class="tech-btn navtext" href="technology-vehicle.html"
+            ><strong>03</strong> Technology</a
+          >
+        </div>
+        <hr class="navhr" />
+      </div>
+      <div class="step">
+        <h5 class="step-text">
+          <span class="step-number">02</span> Meet your crew
+        </h5>
+      </div>
+      <div class="crew-display">
+        <img
+          class="crew-img"
+          src="assets/crew/image-victor-glover.webp"
+          alt="pilot"
+        />
+        <div class="crew-details">
+          <h4 class="crew-title">Pilot</h4>
+          <div class="crew-description">
+            <h3>Victor Glover</h3>
+            <p>
+              Pilot on the first operational flight of the SpaceX Crew <br />
+              Dragon to the International Space Station. Glover is a <br />
+              commander in the U.S. Navy where he pilots an F/A-18. He <br />
+              was a crew member of Expedition 64, and served as <br />
+              a station systems flight engineer.
+            </p>
 
-  02 Meet your crew
-
-  Pilot
-  Victor Glover
-
-  Pilot on the first operational flight of the SpaceX Crew Dragon to the 
-  International Space Station. Glover is a commander in the U.S. Navy where 
-  he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
-  station systems flight engineer. 
-</body>
+            <div class="crew-selector">
+              <a href="crew-commander.html"></a>
+              <a href="crew-specialist.html"></a>
+              <a class="dot-current" href="crew-pilot.html"></a>
+              <a href="crew-engineer.html"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

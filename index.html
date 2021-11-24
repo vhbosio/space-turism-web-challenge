@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@500;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="main home">
+      <div class="navbar">
+        <img class="navlogo" src="./assets/shared/logo.svg" alt="logo" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to 
-  outer space and not hover kind of on the edge of it. Well sit back, and relax 
-  because we’ll give you a truly out of this world experience!
-
-  Explore
-
-</body>
+        <div class="navbtn">
+          <a class="home-btn navtext current" href="index.html"
+            ><strong>00</strong> Home</a
+          >
+          <a class="dest-btn navtext" href="./destination-moon.html"
+            ><strong>01</strong> Destination</a
+          >
+          <a class="crew-btn navtext" href="crew-commander.html"
+            ><strong>02</strong> Crew</a
+          >
+          <a class="tech-btn navtext" href="technology-vehicle.html"
+            ><strong>03</strong> Technology</a
+          >
+        </div>
+        <hr class="navhr" />
+      </div>
+      <div class="home-text">
+        <h5>So, you want to travel to</h5>
+        <h1>SPACE</h1>
+        <p class="home-description">
+          Let’s face it; if you want to go to space, you might as well <br />
+          genuinely go to outer space and not hover kind of on <br />
+          the edge of it. Well sit back, and relax because we’ll give you a
+          <br />
+          truly out of this world experience!
+        </p>
+      </div>
+      <a class="explore-btn" href="destination-moon.html"> Explore </a>
+    </div>
+  </body>
 </html>

@@ -1,27 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="main crew">
+      <div class="navbar">
+        <img class="navlogo" src="./assets/shared/logo.svg" alt="logo" />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+        <div class="navbtn">
+          <a class="home-btn navtext" href="index.html"
+            ><strong>00</strong> Home</a
+          >
+          <a class="dest-btn navtext" href="./destination-moon.html"
+            ><strong>01</strong> Destination</a
+          >
+          <a class="crew-btn navtext current" href="crew-commander.html"
+            ><strong>02</strong> Crew</a
+          >
+          <a class="tech-btn navtext" href="technology-vehicle.html"
+            ><strong>03</strong> Technology</a
+          >
+        </div>
+        <hr class="navhr" />
+      </div>
+      <div class="step">
+        <h5 class="step-text">
+          <span class="step-number">02</span> Meet your crew
+        </h5>
+      </div>
+      <div class="crew-display">
+        <img
+          class="crew-img"
+          src="assets/crew/image-douglas-hurley.webp"
+          alt="commander"
+        />
+        <div class="crew-details">
+          <h4 class="crew-title">Commander</h4>
+          <div class="crew-description">
+            <h3>Douglas Hurley</h3>
+            <p>
+              Douglas Gerald Hurley is an American engineer, former <br />
+              Marine Corps pilot and former NASA astronaut. He <br />
+              launched into space for the third time as commander of <br />
+              Crew Dragon Demo-2.
+            </p>
 
-  02 Meet your crew
-
-  Commander
-  Douglas Hurley
-
-  Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
-  and former NASA astronaut. He launched into space for the third time as 
-  commander of Crew Dragon Demo-2.
-</body>
+            <div class="crew-selector">
+              <a class="dot-current" href="crew-commander.html"></a>
+              <a href="crew-specialist.html"></a>
+              <a href="crew-pilot.html"></a>
+              <a href="crew-engineer.html"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

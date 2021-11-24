@@ -1,0 +1,416 @@
+:root {
+  --dark: #0b0d17;
+  --lilac: #d0d6f9;
+  --white: #ffffff;
+}
+
+/* Element Selectors */
+
+body {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+h1 {
+  font-size: 150px;
+  font-family: Bellefair;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 100px;
+  font-family: Bellefair;
+  text-transform: uppercase;
+  margin: 30px auto;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 56px;
+  font-family: Bellefair;
+  text-transform: uppercase;
+  margin: 20px auto 40px auto;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 32px;
+  font-family: Bellefair;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 28px;
+  font-family: "Barlow Condensed";
+  letter-spacing: 4.75px;
+  text-transform: uppercase;
+  color: var(--lilac);
+  font-weight: normal;
+}
+
+h6 {
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 18px;
+  font-family: Barlow;
+  line-height: 1.5;
+  color: var(--lilac);
+}
+
+/* General Class Selectors */
+
+.main {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  top: 0;
+  bottom: 0;
+  width: 99.5%;
+}
+
+.home {
+  background-image: url("../assets/home/background-home-desktop.jpg");
+}
+
+.dest {
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+}
+
+.crew {
+  background-image: url("../assets/crew/background-crew-desktop.jpg");
+}
+
+.tech {
+  background-image: url("../assets/technology/background-technology-desktop.jpg");
+}
+
+.step {
+  position: absolute;
+  left: 150px;
+}
+
+.step-number {
+  opacity: 25%;
+  font-weight: bold;
+}
+
+.step-text {
+  color: var(--white);
+  font-weight: normal;
+}
+
+.subh1 {
+  font-family: Bellefair;
+  font-size: 28px;
+  margin-top: 0;
+}
+
+.subh2 {
+  font-family: "Barlow Condensed";
+  font-size: 14px;
+  letter-spacing: 2.35px;
+  color: var(--lilac);
+  margin-bottom: 5px;
+}
+
+.navtext {
+  font-family: "Barlow Condensed";
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/* Header bar */
+
+.navbar {
+  position: relative;
+  width: 99%;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 150px;
+  padding: 10px;
+}
+
+.navlogo {
+  position: absolute;
+  display: inline-block;
+  left: 30px;
+  top: 50px;
+  height: 50px;
+}
+
+.navhr {
+  position: absolute;
+  width: 40%;
+  display: inline-block;
+  left: 150px;
+  top: 63px;
+  border-style: none;
+  height: 2px;
+  background-color: #fff3;
+}
+
+.navbtn {
+  position: absolute;
+  display: block;
+  right: 0px;
+  top: 30px;
+  width: 50%;
+  padding: 30px;
+  background-color: #ffffff11;
+  backdrop-filter: blur(15px);
+  text-align: center;
+}
+
+.navbtn a {
+  margin: 50px;
+  color: var(--white);
+  text-decoration: none;
+  padding-bottom: 24px;
+}
+
+.navbtn a:hover {
+  border-bottom: solid 3px;
+  border-color: #fff9;
+}
+
+.current {
+  border-bottom: solid 3px;
+  border-color: var(--white);
+}
+
+/* Home */
+
+.explore-btn {
+  text-decoration: none;
+  color: var(--dark);
+  text-align: center;
+  background-color: var(--white);
+  border-radius: 100%;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  right: 200px;
+  bottom: 100px;
+  font-size: 32px;
+  font-family: Bellefair;
+  text-transform: uppercase;
+  border-style: none;
+  outline: solid 1px;
+  outline-color: #0000;
+  transition: outline 1s;
+  line-height: 300px;
+}
+
+.explore-btn:hover {
+  outline: solid 75px;
+  outline-color: #fff1;
+}
+
+.home-text {
+  position: absolute;
+  left: 250px;
+  bottom: 100px;
+}
+
+/* Destination */
+
+.moon-display {
+  position: relative;
+}
+
+.moon-img {
+  position: absolute;
+  left: 300px;
+  top: 150px;
+  height: 550px;
+}
+
+.moon-details {
+  position: absolute;
+  display: block;
+  right: 0px;
+  top: 100px;
+  width: 40%;
+}
+
+.moon-selector {
+  position: relative;
+  padding: 20px;
+  padding-left: 0;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.moon-selector a {
+  font-family: "Barlow Condensed";
+  font-size: 16px;
+  margin: 50px 30px 50px 0px;
+  color: var(--white);
+  text-decoration: none;
+  padding-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 4.75px;
+}
+
+.moon-selector a:hover {
+  border-bottom: solid 3px;
+  border-color: #fff9;
+}
+
+.moon-description {
+  position: relative;
+}
+
+.moon-description p {
+  margin-bottom: 50px;
+}
+
+.moon-details-separator {
+  width: 60%;
+  margin: 25px 0;
+  border-style: none;
+  height: 2px;
+  background-color: #fff3;
+}
+
+.moon-data {
+  width: 50%;
+}
+
+/* Crew */
+
+.crew-display {
+  position: relative;
+}
+
+.crew-img {
+  position: absolute;
+  right: 300px;
+  top: 45px;
+  height: 750px;
+}
+
+.crew-title {
+  opacity: 50%;
+  margin-bottom: 0;
+}
+
+.crew-details {
+  position: absolute;
+  display: block;
+  left: 150px;
+  top: 200px;
+  width: 40%;
+}
+
+.crew-selector {
+  position: absolute;
+  top: 270px;
+  text-align: left;
+  margin-top: 80px;
+}
+
+.crew-selector a {
+  display: inline-block;
+  opacity: 20%;
+  background-color: var(--white);
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  margin: 50px 30px 50px 0px;
+}
+
+.crew-selector a:hover {
+  opacity: 40%;
+}
+
+.dot-current {
+  opacity: 100% !important;
+}
+
+.crew-description {
+  position: relative;
+}
+
+.crew-description p {
+  margin-bottom: 50px;
+}
+
+/* Technology */
+
+.tech-display {
+  position: relative;
+}
+
+.tech-img {
+  position: absolute;
+  right: 0px;
+  top: 140px;
+  height: 550px;
+}
+
+.tech-title {
+  color: var(--lilac);
+  margin-bottom: 0;
+}
+
+.tech-details {
+  position: absolute;
+  display: block;
+  left: 350px;
+  top: 200px;
+  width: 40%;
+}
+
+.tech-selector {
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  padding: 20px;
+  padding-left: 0;
+  text-align: left;
+  margin-bottom: 40px;
+  margin-top: 80px;
+}
+
+.tech-selector a {
+  display: block;
+  opacity: 40%;
+  border: solid 1px;
+  border-color: var(--white);
+  border-radius: 100%;
+  width: 75px;
+  height: 75px;
+  margin: 35px 30px 35px 0px;
+  text-align: center;
+  line-height: 75px;
+  color: var(--white);
+  font-size: 32px;
+  font-family: Bellefair;
+  text-decoration: none;
+}
+
+.tech-selector a:hover {
+  opacity: 75%;
+}
+
+.circle-current {
+  opacity: 100% !important;
+  background-color: var(--white);
+  color: var(--dark) !important;
+}
+
+.tech-description {
+  position: relative;
+}
+
+.tech-description p {
+  margin-bottom: 50px;
+}
